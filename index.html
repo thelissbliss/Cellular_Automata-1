@@ -1,0 +1,43 @@
+<!doctype html><html><head>
+<title>This is an HTML canvas</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body><h1>Cellular Automata : Ant #12</h1>
+<h4>Time-stamp: 2019-01-21 20:11:03 Team name</h4>
+
+<canvas id="grid" width="400" height="400"></canvas>
+
+</body>
+<script src="../assets/draw-stuff.js"></script>
+<script>
+
+
+// =====================================================  Main ====
+	var canvas = document.getElementById( "grid" );
+	var context = canvas.getContext( "2d" );
+	//starting direction is West
+	var direction = 0;
+	//Set to 200 for starting position
+	//all values will be multiplied by 10
+	//x=200 is really at point x=20
+	var xaxis=200;
+	var yaxis=200;
+	// Draw a grid
+	draw_grid( context, 10, 50, 'white', 'yellow' );
+
+	//Where am I pointing function (west, dead center starting)
+	pointThis(direction, context, yaxis,xaxis);
+	//pointThis(0, context, 100,100);
+	//pointThis(1, context, 250,250);
+	//pointThis(3, context, 300,300);
+	
+	//Fills in the color for a given square
+ 	fillSquare(context, yaxis,xaxis);
+	//fillSquare(context, 250,250);
+	//fillSquare(context, 300,300);
+	//fillSquare(context, 100,100);
+	
+	//moves to the next cell
+	//walkto(context, yaxis,xaxis);
+</script>
+</html>
