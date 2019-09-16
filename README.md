@@ -1,4 +1,4 @@
-Team Name:
+Team Name: LAA
 
 Members: 
 Laura Solorio
@@ -10,7 +10,7 @@ Project #1 – Cella Ant 12
 Class number = CPSC 335-04
 
 Intro (including the algorithm used):
-The algorithm used was the cycle
+Cella Ant #12
 
 Contents: Files in the .zip submission:
 js-1.html
