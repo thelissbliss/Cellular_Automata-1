@@ -1,3 +1,5 @@
+// import java.util.Random;
+
 // Draw stuff
 // ------------------------------------------------------------
 let ruleset = [0, 0, 0 , 0, 1, 1, 0, 0];
@@ -32,7 +34,66 @@ function draw_grid( rctx, rminor, rmajor, rstroke, rfill  )
     rctx.restore( ); 
 }
 
-//Determines the direection for North, East, South, or West
+// Determine next move
+private static int nextMove(int min, int max) {
+
+	if (min >= max) {
+		throw new IllegalArgumentException("max > min");
+	}
+
+	Random r = new Random();
+	return r.nextInt((max - min) + 1) + min;
+}
+
+// Next move instructions
+function nextInstructions(int r) {
+	if (r==0){
+		// black = turn right
+		if (direction = 0) { // North turn East
+			direction = 1;
+
+		} else if (direction = 1) { // East turn South
+			direction = 2;
+
+		} else if (direction = 2) { // South turn West
+			direction = 3;
+		} else { // West turn North
+			direction = 0;
+		}
+		
+	} else if (r==1) {
+		// red = turn right
+		if (direction = 0) { // North turn East
+			direction = 1;
+
+		} else if (direction = 1) { // East turn South
+			direction = 2;
+
+		} else if (direction = 2) { // South turn West
+			direction = 3;
+		} else { // West turn North
+			direction = 0;
+		}
+
+	} else {
+		// yellow or blue = turn left
+		if (direction = 0) { // North turn West
+			direction = 3;
+
+		} else if (direction = 1) { // East turn North
+			direction = 0;
+
+		} else if (direction = 2) { // South turn East
+			direction = 1;
+
+		} else { // West turn South
+			direction = 2;
+		}
+
+	}
+}
+
+//Determines the direction for North, East, South, or West
 //Displays white triangle
 function pointThis(direction, triangle, yaxis,xaxis) {
 	//Points North on a given input
@@ -83,7 +144,7 @@ function pointThis(direction, triangle, yaxis,xaxis) {
 		triangle.restore();
 		
 	}
-	//Points Wouth on a given input
+	//Points West on a given input
 	else if(direction==3){ 
 		triangle.save();
 		triangle.beginPath();
