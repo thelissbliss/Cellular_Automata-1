@@ -22,6 +22,11 @@
 	//x=200 is really at point x=20
 	var xaxis=200;
 	var yaxis=200;
+	
+	//range of colors Black=0 → Red=1 → Yellow=2 → Blue=3.
+	var color=["Black", "Red", "Yellow", "blue"];
+	var count =1;
+	
 	// Draw a grid
 	draw_grid( context, 10, 50, 'white', 'yellow' );
 
@@ -32,12 +37,8 @@
 	//pointThis(3, context, 300,300);
 	
 	//Fills in the color for a given square
- 	fillSquare(context, yaxis,xaxis);
-	//fillSquare(context, 250,250);
-	//fillSquare(context, 300,300);
-	//fillSquare(context, 100,100);
+	//passes count for color
+ 	fillSquare(context, yaxis,xaxis,color,count);
 	
-	//moves to the next cell
-	//walkto(context, yaxis,xaxis);
 </script>
 </html>
