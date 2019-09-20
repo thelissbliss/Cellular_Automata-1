@@ -14,6 +14,8 @@ Contents: Files in the .zip submission:
 js-1.html
 draw-stuff.js
 styles.css
+README.md
+Complexity_Order.doc
 
 External Requirements:
 
