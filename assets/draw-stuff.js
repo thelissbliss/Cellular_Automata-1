@@ -279,4 +279,5 @@ function changeStateArray(square, xaxis, yaxis, color,direction,stateArray) {
 	//loop counter
 	counter++;
 	}
+	pointThis(direction, context, yaxis,xaxis);
 }
