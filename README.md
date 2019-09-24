@@ -10,19 +10,15 @@ Class number = CPSC 335-04
 
 Intro (including the algorithm used): Cella Ant #12
 
-Contents: Files in the .zip submission:
+Contents (Files in the .zip submission):
 js-1.html
 draw-stuff.js
 styles.css
 README.md
 Complexity_Order.doc
 
-External Requirements:
+Setup and Installation (if any): Download and select html file to open on browser.
 
-Setup and Installation (if any):
-
-Sample invocation:
-
-Features (both included and missing):
+Features (both included and missing): Ant will display on cells current position. Depending on the current cell color, the ant will point North, South, East, or West.
 
 Bugs (if any): No Bugs
