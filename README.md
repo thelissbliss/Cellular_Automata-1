@@ -1,12 +1,10 @@
 Team Name: LAA
 
 Members: 
-    Laura Solorio - laurasolorio98@csu.fullerton.edu
-    Alyssa Bright - alyssabright@csu.fullerton.edu
+    Laura 
+    Alyssa 
 
 Project #1 – Cella Ant 12
-
-Class number = CPSC 335-04
 
 Intro (including the algorithm used): Cella Ant #12
 
